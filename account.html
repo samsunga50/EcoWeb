@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products | RedStore</title>
+    <title>EcoWeb | Account</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -26,7 +30,7 @@
                     <li><a href="account.html">Account</a></li>
                 </ul>
             </nav>
-            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <a href="cart.html"><img src="images/cart_white.png" width="30px" height="30px"></a>
             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
@@ -36,29 +40,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <img src="images/image1.png" width="100%">
+                    <img src="images/online-shopping.jpg" width="100%">
                 </div>
-                <div class="col-2">
-                    <div class="form-container">
-                        <div class="form-btn">
-                            <span onclick="login()">Login</span>
-                            <span onclick="register()">Register</span>
-                            <hr id="Indicator">
-                        </div>
-                        <form id="LoginForm">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
-                            <button type="submit" class="btn">Login</button>
-                            <a href="">Forget Password</a>
-                        </form>
-
-                        <form id="RegForm">
-                            <input type="text" placeholder="Username">
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
-                            <button type="submit" class="btn">Register</button>
-                        </form>
+                <div class="col-2"> 
+                    <div class="account_details"> 
+                        <h3>Hello dear customer <br> Please choose one of the following:</h3>
                     </div>
+                    <a href="registration/register.php" class="btn">Sign Up &#8594;</a><br> 
+                    <a href="registration/login.php" class="btn">Sign In &#8594;</a><br>     
                 </div>
             </div>
         </div>

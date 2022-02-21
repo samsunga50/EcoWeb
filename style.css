@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #9694945b;
+    background-color: #0000005b;
 }
 
 .product_body{
@@ -204,6 +204,7 @@ p{
     line-height: 60px;
     color: #555;
 }
+
 .title::after{
     content: '';
     background: hsl(7, 100%, 62%);
@@ -485,7 +486,7 @@ th:last-child{
 /* Account page */
 .account-page{
     padding: 50px 0;
-    background: radial-gradient(#fff, #ffd6d6);
+    background-color: rgb(0, 0, 0);
 }
 .form-container{
     background: #fff;
@@ -497,6 +498,9 @@ th:last-child{
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+}
+.account_details{
+    color: #ccc;
 }
 .form-container span{
     font-weight: bold;
