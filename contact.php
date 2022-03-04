@@ -1,23 +1,30 @@
 <?php
-    $name = $_POST['fullname'];
-    $email = $_POST['emailaddress'];
-    $message = $_POST['message'];
 
- 
+$db = mysqli_connect('localhost', 'root', '', 'test');
+
+$name = mysqli_real_escape_string($db,$_POST['fullname']);
+$email = mysqli_real_escape_string($db,$_POST['emailaddress']);
+$message = mysqli_real_escape_string($db,$_POST['message']);
+
+
+$sql = "INSERT INTO contact (email, message, name)
+VALUES ('$email', '$message', '$name')";
+mysqli_query($db, $sql);
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script> 
-$(document).ready(function(){
-  $("button").click(function(){
-    $("button").fadeOut(3000);
-    //$("button").hide();
-  });
-});
-</script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button").click(function() {
+        $("button").fadeOut(3000);
+      });
+    });
+  </script>
 
   <style>
     input[type=text] {
@@ -82,7 +89,7 @@ $(document).ready(function(){
             <br>
           </div>
           <div>
-            <form action="/action_page.php">
+            <form method="post" action="contact.php">
               <label for="name">
                 <h4>Name</h4>
               </label>
@@ -100,7 +107,7 @@ $(document).ready(function(){
 
             </form>
           </div>
-          <button  method="POST" class="btn">Post &#8594;</button><br>
+          <button type="submit" class="btn">Post &#8594;</button><br>
         </div>
       </div>
     </div>

@@ -34,9 +34,27 @@ $conn->close();
     <title>EcoWeb | Sign Up</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="About.js" type="text/Javascript">
+
+    <script>
+        function ipLookUp() {
+            $.ajax('http://ip-api.com/json')
+                .then(
+                    function success(response) {
+                        alert('User\'s Location Data is ', response);
+                        alert('User\'s Country', response.country);
+                    },
+
+                    function fail(data, status) {
+                        alert('Request failed.  Returned status of',
+                            status);
+                    }
+                );
+        }
+        ipLookUp()
+    </script>
 </head>
 
-<body>
+<body style="background-color: black;">
     <div class="container">
         <div class="navbar">
             <div class="logo">
@@ -69,17 +87,28 @@ $conn->close();
                         </h2>
                         <h3>
                             <p style="text-align: justify;"><i>We are fashion students with a mission to make fashionable clothes and accessories avaialble to everyone. Our goal is to make class affordable <br></p>
-                        </i></h3>
+                            </i>
+                        </h3>
 
                         <br>
                         <h2>
                             <p>Why shop with us?</p>
                         </h2>
                         <h3>
-                            <p style="text-align: justify;"><i> We have <?php echo $users; ?> registered users and <?php echo $orders; ?> orders and counting...</i></p>
+                            <p style="text-align: justify;"><i> We have <b id="users"></b> registered users and <b><?php echo $orders; ?></b> orders and counting...</i></p>
                         </h3>
 
                     </div>
+                    <script>
+                        var c = 0;
+                        function usersCounter() {
+                            if (c != <?php echo $users; ?>){
+                                document.getElementById("users").innerHTML = ++c;
+                            }
+                            
+                        }
+                        setInterval(usersCounter, 1000)
+                    </script>
                 </div>
                 <div class="col-2">
                     <img src="images/online-shopping.jpg" width="100%">
