@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "test";
+$dbname = "registration";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -118,9 +118,7 @@ $conn->close();
         </div>
     </div>
 
-
-
-   <!-- Footer -->
+    <!-- Footer -->
 <div class="footer">
    <div class="container">
        <div class="row">

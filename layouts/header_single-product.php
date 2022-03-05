@@ -14,13 +14,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="/style.css">
+    
 </head>
 <body>
 <div class="header">
      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="logo" width="125px"></a>
+                <a href="index.php"><img src="images/logo.png" alt="logo" width="125px"></a>
             </div>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li><a class="nav-link" href="product.php">All Products</a></li>

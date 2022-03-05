@@ -49,7 +49,7 @@
         }
         ?>
 
-        <nav aria-label="...">
+        <nav aria-label="..." style="margin-top: 30px;">
         <ul class="pagination">
             <li class="page-item disabled">
             <a class="page-link" href="#" tabindex="-1">Previous</a>

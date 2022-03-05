@@ -51,7 +51,7 @@
         }
         ?>
 
-        <nav aria-label="...">
+        <nav aria-label="..." style="margin-top: 30px;">
             <ul class="pagination">
                 <li> <a class="page-link" href="product.php" tabindex="-1">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="product.php">1</a></li>

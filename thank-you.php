@@ -17,10 +17,11 @@
     include('layouts/header.php');
 ?>
 <div class="row">
-    <div class="col-md-12">
-        <h1>Thank you!</h1>
+    <div class="col-md-12" style = "text-align:center; margin-top:40px">
+        <h1><strong>Thank you.</strong></h1>
+        <h2>Your order was completed successfully</h2>
         <p>
-            Your order has been placed.
+            Our Sales Agent will contanct you shortly via mail.
             <?php unset($_SESSION['confirm_order']);?>
         </p>
     </div>
