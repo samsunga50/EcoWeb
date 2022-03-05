@@ -31,10 +31,10 @@
                 </div>
                 <nav>
                     <ul id="MenuItems" style=" color:white">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="product.php">Products</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="about.php">About</a></li>
+                        <li><a href="contact.php">Contact</a></li>
                         <li><a href="account.html">Account</a></li>
                     </ul>
                 </nav>
@@ -48,6 +48,7 @@
                     <a href="product.php" class="btn">Explore Now &#8594;</a>
                 </div>
                     <div class="col-2">
+                        <!-- code for slideshow -->
                         <div class="w3-content w3-section" style="max-width:500px">
                             <img class="mySlides" src="SlideShow Images/pexels-terje-sollie-298863.jpg" style="width:100%">
                             <img class="mySlides" src="SlideShow Images/pexels-lumn-167686.jpg" style="width:100%">
@@ -238,7 +239,7 @@
                 <div class="footer-col-3">
                     <h3>Useful Links</h3>
                     <ul>
-                        <li><a href = "contact.html">Contact Us</li>
+                        <li><a href = "contact.php">Contact Us</li>
                         <li><a href= "AboutUs.html">About Us</li>
                     </ul>
                 </div>

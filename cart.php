@@ -23,7 +23,7 @@
         <table class="table">
             <tr>
                 <td>
-                    <p>Your cart is emty</p>
+                    <h1>Your cart is emty</h1>
                 </td>
             </tr>
         </table>
@@ -60,10 +60,10 @@
 
                         </td>
                         <td>
-                            $<?php echo $item['product_price'];?>
+                            Rs <?php echo $item['product_price'];?>
                         </td>
                         <td>
-                            <input type="number" name="" class="cart-qty-single" data-item-id="<?php echo $key?>" value="<?php echo $item['qty'];?>" min="1" max="1000" >
+                            <input type="number" name="" class="cart-qty-single" style = "text-align:center" data-item-id="<?php echo $key?>" value="<?php echo $item['qty'];?>" min="1" max="1000" >
                         </td>
                         <td>
                             <?php echo $total;?>
@@ -79,7 +79,7 @@
                                 echo ($itemCounter==1)?$itemCounter.' item':$itemCounter.' items'; ?>
                         </strong>
                     </td>
-                    <td><strong>$<?php echo $totalCounter;?></strong></td>
+                    <td><strong>Rs <?php echo $totalCounter;?></strong></td>
                 </tr> 
                 </tr>
             </tbody> 

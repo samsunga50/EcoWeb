@@ -66,15 +66,16 @@
                         $totalPrice = 0;
                         foreach($_SESSION['cart_items'] as $item)
                         {
-                            $totalPrice+=$item['total_price'];
+                            $item['total_price']+= ($item['product_price'] * $item['qty']);
+                            $totalPrice += ($item['product_price'] * $item['qty']);
 
                             $paramOrderDetails = [
-                                'order_id' =>  $getOrderID,
-                                'product_id' =>  $item['product_id'],
-                                'product_name' =>  $item['product_name'],
-                                'product_price' =>  $item['product_price'],
-                                'qty' =>  $item['qty'],
-                                'total_price' =>  $item['total_price']
+                              'order_id' =>  $getOrderID,
+                              'product_id' =>  $item['product_id'],
+                              'product_name' =>  $item['product_name'],
+                              'product_price' =>  $item['product_price'],
+                              'qty' =>  $item['qty'],
+                              'total_price' =>  $item['total_price']
                             ];
 
                             $orderDetailStmt->execute($paramOrderDetails);
@@ -178,8 +179,8 @@
         }
     }
 	
-	$pageTitle = 'Demo PHP Shopping cart checkout page with Validation';
-	$metaDesc = 'Demo PHP Shopping cart checkout page with Validation';
+	$pageTitle = 'EcoWeb | Checkout';
+	$metaDesc = 'EcoWeb | Checkout';
 	
     include('layouts/header.php');
 ?>
@@ -194,22 +195,22 @@
                 $total = 0;
                 foreach($_SESSION['cart_items'] as $cartItem)
                 {
-                    $total+=$cartItem['total_price'];
+                     $total += ($cartItem['product_price'] * $cartItem['qty'])
                 ?>
                     <li class="list-group-item d-flex justify-content-between lh-condensed">
                         <div>
                             <h6 class="my-0"><?php echo $cartItem['product_name'] ?></h6>
                             <small class="text-muted">Quantity: <?php echo $cartItem['qty'] ?> X Price: <?php echo $cartItem['product_price'] ?></small>
                         </div>
-                        <span class="text-muted">$<?php echo $cartItem['total_price'] ?></span>
+                        <span class="text-muted">Rs<?php echo ($cartItem['product_price'] * $cartItem['qty'])?></span>
                     </li>
             <?php
                 }
             ?>
            
             <li class="list-group-item d-flex justify-content-between">
-              <span>Total (USD)</span>
-              <strong>$<?php echo number_format($total,2);?></strong>
+              <span>Total (Rs)</span>
+              <strong>Rs<?php echo $total;?></strong>
             </li>
           </ul>
         </div>
@@ -256,14 +257,22 @@
                 <label for="country">Country</label>
                 <select class="custom-select d-block w-100" name="country" id="country" >
                   <option value="">Choose...</option>
-                  <option value="United States" >United States</option>
+                  <option value="Mauritius">Mauritius</option>
                 </select>
               </div>
               <div class="col-md-4 mb-3">
-                <label for="state">State</label>
+                <label for="state">District</label>
                 <select class="custom-select d-block w-100" name="state" id="state" >
                   <option value="">Choose...</option>
-                  <option value="California">California</option>
+                  <option value="Black River">Black River</option>
+                  <option value="Flacq">Flacq</option>
+                  <option value="Grand Port">Grand Port</option>
+                  <option value="Moka">Moka</option>
+                  <option value="Pamplemousses">Pamplemousses</option>
+                  <option value="Plaines Wilhems">Plaines Wilhems</option>
+                  <option value="Port Louis">Port Louis</option>
+                  <option value="Riviere du Rempart">Riviere du Rempart</option>
+                  <option value="Savanne">Savanne</option>
                 </select>
               </div>
               <div class="col-md-3 mb-3">
