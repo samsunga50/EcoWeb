@@ -86,7 +86,7 @@ $conn->close();
                             <p>Who are we?</p>
                         </h2>
                         <h3>
-                            <p style="text-align: justify;"><i>We are fashion students with a mission to make fashionable clothes and accessories avaialble to everyone. Our goal is to make class affordable <br></p>
+                            <p style="text-align: justify;"><i>Our Purpose is to bring an online platform to Mauritian in order for them to enjoy a safe shopping free from covid risks while making fashionable clothes and accessories avaialble to everyone. Our goal is to make class affordable <br></p>
                             </i>
                         </h3>
 
@@ -120,46 +120,42 @@ $conn->close();
 
 
 
-    <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and ios mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="images/play-store.png">
-                        <img src="images/app-store.png">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="images/logo-white.png">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
-                    </p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="copyright">Copyright 2022 - EcoWeb</p>
-        </div>
-    </div>
+   <!-- Footer -->
+<div class="footer">
+   <div class="container">
+       <div class="row">
+           <div class="footer-col-1">
+               <div class="app-logo">
+                   <img src="images/vecteezy_logos-set-fast-delivery-service_.jpg">
+               </div>
+           </div>
+           <div class="footer-col-2">
+               <img src="images/logo-white.png" style="width:100%;">
+               <p>Our Purpose is to bring an online platform to Mauritian in order for them to enjoy a safe shopping free from covid risks.
+               </p>
+           </div>
+           <div class="footer-col-3">
+               <h3>Useful Links</h3>
+               <ul>
+                   <li><a href="contact.php">Contact Us</li>
+                   <li><a href="AboutUs.html">About Us</li>
+               </ul>
+           </div>
+           <div class="footer-col-4">
+               <h3>Follow Us</h3>
+               <ul>
+                   <li>Facebook</li>
+                   <li>Twitter</li>
+                   <li>Instagram</li>
+               </ul>
+           </div>
+       </div>
+       <hr>
+       <p class="copyright">Copyright 2022 - Tiraaj Ramchurn & Nikhil Ken Ramessur</p>
+   </div>
+</div>
+
+
 </body>
 
 </html>
