@@ -16,7 +16,6 @@ $sql = "SELECT COUNT(*) FROM users";
 $users = $conn->query($sql);
 $users = mysqli_fetch_column($users, 0);
 
-
 $sql = "SELECT COUNT(*) FROM orders";
 
 $orders = $conn->query($sql);

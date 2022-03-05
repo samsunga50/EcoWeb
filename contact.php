@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script> 
-$(document).ready(function(){
-  $("button").click(function(){
-    $("button").fadeOut(3000);
-    //$("button").hide();
-  });
-});
-</script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button").click(function() {
+        $("button").fadeOut(3000);
+      });
+    });
+  </script>
 
   <style>
     input[type=text] {
@@ -74,7 +73,7 @@ $(document).ready(function(){
             <br>
           </div>
           <div>
-            <form action="/action_page.php">
+            <form method="post" action="contact.php">
               <label for="name">
                 <h4>Name</h4>
               </label>
@@ -92,7 +91,7 @@ $(document).ready(function(){
 
             </form>
           </div>
-          <button  method="POST" class="btn">Post &#8594;</button><br>
+          <button type="submit" class="btn">Post &#8594;</button><br>
         </div>
       </div>
     </div>
